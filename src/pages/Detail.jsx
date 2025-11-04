@@ -13,11 +13,20 @@ export default function Detail() {
     if (!movie) return <div style={{textAlign:"center",color:"#2563eb",marginTop:"50px"}}>Loading...</div>;
 
     return (
-        <div style={{maxWidth:"800px",margin:"40px auto",background:"#fff",borderRadius:"12px",padding:"20px",boxShadow:"0 4px 8px rgba(0,0,0,0.1)"}}>
-            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} style={{width:"100%",borderRadius:"12px"}}/>
-            <h2 style={{color:"#2563eb",margin:"20px 0 10px"}}>{movie.title}</h2>
-            <p>⭐ {movie.vote_average?.toFixed(1)} | {movie.runtime} mins</p>
-            <p style={{marginTop:"10px",color:"#555"}}>{movie.overview}</p>
+        <div className="detail-container">
+            <img 
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} 
+                alt={movie.title} 
+                className="detail-image"
+            />
+            <div className="detail-info">
+                <h2>{movie.title}</h2>
+                <p><strong>Sinopsis:</strong> {movie.overview}</p>
+                <p><strong>Genre:</strong> {movie.genres.map(g => g.name).join(", ")}</p>
+                <p><strong>Rating:</strong> ⭐ {movie.vote_average?.toFixed(1)}</p>
+                <p><strong>Durasi:</strong> {movie.runtime} mins</p>
+                <p><strong>Tahun Rilis:</strong> {movie.release_date?.slice(0,4)}</p>
+            </div>
         </div>
     );
 }

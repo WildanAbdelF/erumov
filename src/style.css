@@ -34,6 +34,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.2s;
+    text-decoration: none;
 }
 
 .movie-card:hover {
@@ -75,4 +76,64 @@ h2 {
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+.detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.detail-image {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.detail-image {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.detail-info {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-info h2 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.detail-info p {
+    margin: 6px 0;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .detail-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .detail-info {
+        align-items: center;
+        text-align: center;
+    }
 }
