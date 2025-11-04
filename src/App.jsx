@@ -4,6 +4,7 @@ import Detail from "./pages/Detail";
 import Popular from "./pages/Popular";
 import Upcoming from "./pages/Upcoming";
 import Latest from "./pages/Latest";
+import Navbar from "./components/Navbar";
 import "./style.css";
 
 export default function App() {

@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <div>
             <header>
-                <h1>🎬 Movie Explorer</h1>
+                <h1>🎬 EruMov | Movie Explorer</h1>
             </header>
             <MovieList title="Popular Movies" movies={popular} seeAllLink="/popular" />
             <MovieList title="Upcoming Movies" movies={upcoming} seeAllLink="/upcoming" />
