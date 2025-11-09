@@ -12,13 +12,14 @@ export default function MovieCard({ movie }) {
                 <div className="movie-top">
                     <div className="movie-row">
                         <h3 className="movie-title">{movie.title}</h3>
-                        <p className="movie-year">{movie.release_date?.slice(0, 4)}</p>
+                        <p className="movie-rating">⭐ {movie.vote_average?.toFixed(1)}</p>
                     </div>
                 </div>
 
                 <div className="movie-bottom">
                     <div className="movie-row">
-                        <p className="movie-rating">⭐ {movie.vote_average?.toFixed(1)}</p>
+                        <p className="movie-release">{movie.release_date?.slice(0,4)}</p>
+                        <p className="movie-language">{movie.original_language.toUpperCase()}</p>
                     </div>
                 </div>
             </div>
