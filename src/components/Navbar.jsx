@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="container">
-                <h1 className="logo">🎬 Movie Explorer</h1>
+                <h1 className="logo">EruMov</h1>
                 <div className="nav-links">
                     <Link to="/">Home</Link>
                     <Link to="/popular">Popular</Link>

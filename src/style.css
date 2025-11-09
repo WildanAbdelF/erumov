@@ -27,24 +27,64 @@ h2 {
 }
 
 .movie-card {
-    background-color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    width: 180px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.2s;
-    text-decoration: none;
+  display: block;
+  background-color: #111;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+  width: 220px;
 }
 
 .movie-card:hover {
-    transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
 .movie-card img {
     width: 100%;
-    height: 270px;
+    height: 300px;
     object-fit: cover;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pisahkan atas dan bawah */
+  flex-grow: 1;
+  padding: 20px 14px;
+}
+
+.movie-top {
+  flex-grow: 1;
+}
+
+.movie-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-rating {
+  color: #ffd700; /* warna bintang kuning */
+}
+
+.movie-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-duration,
+.movie-rating {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
 }
 
 .movie-card h3 {
@@ -57,16 +97,22 @@ h2 {
     margin: 2px 0;
 }
 
+.movie-year {
+  font-size: 14px;
+  color: #bbb;
+}
+
 .movie-section {
-    margin: 40px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 .see-all {
-    float: right;
-    margin-top: -30px;
-    margin-right: 20px;
-    text-decoration: none;
     color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
 }
 
 .see-all:hover {
@@ -76,6 +122,7 @@ h2 {
 .container {
     max-width: 1200px;
     margin: auto;
+    margin-bottom: 150px;
 }
 
 .detail-container {
@@ -139,6 +186,7 @@ h2 {
 .navbar .logo {
     font-size: 20px;
     font-weight: bold;
+    color: #fff;
 }
 
 .navbar .nav-links a {
@@ -168,4 +216,7 @@ h2 {
         align-items: center;
         text-align: center;
     }
+
+
+
 }
