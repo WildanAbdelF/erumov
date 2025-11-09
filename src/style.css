@@ -39,7 +39,7 @@ h2 {
 }
 
 .movie-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .movie-card img {
@@ -108,6 +108,11 @@ h2 {
     padding: 0 20px;
 }
 
+.movie-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .see-all {
     color: #2563eb;
     text-decoration: none;

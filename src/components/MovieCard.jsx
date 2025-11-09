@@ -18,7 +18,6 @@ export default function MovieCard({ movie }) {
 
                 <div className="movie-bottom">
                     <div className="movie-row">
-                        <p className="movie-duration">⏱ {movie.runtime ? `${movie.runtime} min` : "Unknown"}</p>
                         <p className="movie-rating">⭐ {movie.vote_average?.toFixed(1)}</p>
                     </div>
                 </div>

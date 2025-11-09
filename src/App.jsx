@@ -13,10 +13,10 @@ export default function App() {
           <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/movie/:id" element={<Detail />} />
                 <Route path="/popular" element={<Popular />} />
                 <Route path="/upcoming" element={<Upcoming />} />
                 <Route path="/latest" element={<Latest />} />
+                <Route path="/movie/:id" element={<Detail />} />
             </Routes>
         </BrowserRouter>
     );
